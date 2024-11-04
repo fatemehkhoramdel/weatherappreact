@@ -12,17 +12,23 @@ export default function Weather() {
           <input type="submit" className="btn btn-primary"></input>
         </div>
       </div>
-      <h1> reach for Mashhad</h1>
+      <h1>
+        Sreach for <span className="cityName">Mashhad</span>
+      </h1>
       <div className="row">
         <div className="col-9">
           <div className="row">
-            <div className="col-4">
-              <image href="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"></image>
+            <div className="col-6 w-30">
+              <img
+                class="wob_tci"
+                alt="Mostly cloudy"
+                src="//ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                className="fluid"
+              />
+              <span className="temp">28</span>
+              <span className="unit">°C</span>
             </div>
-            <div className="col-4">
-              <h2>28°C</h2>
-            </div>
-            <div className="col-4">
+            <div className="col-6">
               <ul>
                 <li>Precipitation: 2% </li>
                 <li>Humidity: 80% </li>
@@ -31,9 +37,9 @@ export default function Weather() {
             </div>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-3 warp">
           <ul>
-            <li>Weather </li>
+            <li className="info">Weather </li>
             <li>Saturday 10:00 pm </li>
             <li>Mostly cloudy</li>
           </ul>
